@@ -1,0 +1,480 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+  color: rgb(80, 79, 79);
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 0;
+  display: none;
+}
+
+/***** header部分 *****/
+
+.header-title {
+  font-size: 48px;
+  letter-spacing: 0.14em;
+  font-weight: 400;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.header-title:hover {
+  opacity: 0.7;
+}
+
+.header-nav {
+  width: 50%;
+  margin-right: 100px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 30px 0;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 80px;
+}
+
+.nav-item:hover {
+  text-decoration: 2px underline;
+}
+
+.header-inner {
+  position: fixed;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 1px 4px rgba(216, 216, 216, 0.25);
+}
+
+.top-img {
+  margin-top: 100px;
+  width: 100%;
+  height: 75%;
+  display: none;
+}
+
+/***** About部分 *****/
+
+.About {
+  padding-top: 150px;
+}
+/* 
+.about-p{
+  display: flex;
+  align-items: center;
+} */
+
+.more {
+  position: relative;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* ホバー時、１枚目透過 */
+.more:hover img:first-of-type {
+  opacity: 0;
+}
+
+/* ２枚目の位置と透過 */
+.more img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* ホバー時２枚目表示 */
+.more:hover img:last-of-type {
+  opacity: 1;
+}
+
+/***** Skill部分 *****/
+
+.Skill {
+  padding-top: 150px;
+}
+
+.skill-inner {
+  display: flex;
+  align-items: center;
+}
+
+.skill-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.skill-comment {
+  margin-left: 100px;
+}
+
+.skill-inner {
+  margin: 50px 0;
+}
+
+.skill-img {
+  width: 190px;
+  height: auto;
+}
+
+/***** Portfolio部分 *****/
+
+.Portfolio {
+  padding-top: 150px;
+}
+
+.pf-inner {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pf-1,
+.pf-2,
+.pf-3,
+.pf-4,
+.pf-5,
+.pf-6 {
+  border: 1px solid #d8d8d8;
+  width: 48%;
+  height: 100%;
+  position: relative;
+}
+
+/* 0.5sで表示 */
+.pf-1,
+.pf-2,
+.pf-3,
+.pf-4,
+.pf-5,
+.pf-6 img {
+  transition: opacity 0.5s;
+}
+
+/* ホバー時、１枚目透過 */
+.pf-1:hover img:first-of-type {
+  opacity: 0;
+}
+
+.pf-2:hover img:first-of-type {
+  opacity: 0;
+}
+
+.pf-3:hover img:first-of-type {
+  opacity: 0;
+}
+
+.pf-4:hover img:first-of-type {
+  opacity: 0;
+}
+
+.pf-5:hover img:first-of-type {
+  opacity: 0;
+}
+
+.pf-6:hover img:first-of-type {
+  opacity: 0;
+}
+
+/* ２枚目の位置と透過 */
+.pf-1 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.pf-2 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.pf-3 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.pf-4 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.pf-5 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.pf-6 img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* ホバー時２枚目表示 */
+.pf-1:hover img:last-of-type {
+  opacity: 1;
+}
+
+.pf-2:hover img:last-of-type {
+  opacity: 1;
+}
+
+.pf-3:hover img:last-of-type {
+  opacity: 1;
+}
+
+.pf-4:hover img:last-of-type {
+  opacity: 1;
+}
+
+.pf-5:hover img:last-of-type {
+  opacity: 1;
+}
+
+.pf-6:hover img:last-of-type {
+  opacity: 1;
+}
+
+.Portfolio {
+  margin-bottom: 40px;
+}
+
+/* Footer部分 */
+
+.footer-p {
+  font-size: 14px;
+  text-align: right;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  outline-color: #f2f0e9;
+  display: none;
+}
+
+.top-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* 共通クラス */
+
+.section-title {
+  font-size: 40px;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.14em;
+}
+
+.section-sub {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.title-inner {
+  display: flex;
+  align-items: center;
+}
+
+.title-under-p {
+  margin-top: 50px;
+}
+
+.inner {
+  margin: 0 100px;
+}
+
+/* レスポンシブ */
+
+/* 1641px以上 */
+@media screen and (min-width: 1641px) {
+  .header-sp {
+    display: none;
+  }
+
+  .menu-list{
+    display: none;
+  }
+}
+
+/* 1640px以下 */
+@media screen and (max-width: 1640px) {
+  /* header部分 */
+  .header-inner {
+    display: none;
+  }
+
+  .header-title-sp {
+    font-size: 32px;
+    margin-left: 100px;
+    padding: 20px 0;
+    letter-spacing: 0.14em;
+  }
+  .header-inner-sp {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 4px rgba(216, 216, 216, 0.25);
+  }
+
+  .menu-2 {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+    background-image: url(../img/menu.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .menu-list {
+    margin-top: 80px;
+    text-align: right;
+    padding: 30px;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    background-color: rgba(243, 242, 242, 0.8);
+    display: none;
+  }
+
+  .menu-2.is-checked {
+    background-image: url(../img/close.svg);
+  }
+
+  .menu-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .menu-item {
+    display: block;
+    list-style: none;
+    font-size: 28px;
+    font-weight: 350;
+    text-decoration: none;
+    padding: 5px;
+  }
+}
+
+/* 768px以上 */
+@media screen and (min-width: 768px) {
+  .about-sp {
+    display: none;
+  }
+
+  .Skill-sp {
+    display: none;
+  }
+
+  .pf-sp {
+    display: none;
+  }
+}
+
+/* 767px以下 */
+@media screen and (max-width: 767px) {
+  /* header部分 */
+
+  .header-title-sp {
+    font-size: 24px;
+    width: 60%;
+    margin-left: 20px;
+    padding: 20px 0;
+    letter-spacing: 0.14em;
+  }
+
+  .header-title-sp:hover{
+    opacity: 0.7;
+  }
+
+  .menu-2{
+    margin-right: 30px;
+  }
+
+  .nav-list-sp {
+    width: 40%;
+    margin-right: 20px;
+    padding: 20px 0;
+    text-align: right;
+  }
+
+  /* About部分 */
+
+  /* Skill部分 */
+
+  .Skill {
+    display: none;
+  }
+
+  .Skill-sp {
+    padding-top: 150px;
+  }
+
+  .skill-title-sp {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+  /* pf部分 */
+
+  /* footer部分 */
+  .footer-p {
+    margin-right: 30px;
+  }
+
+  .inner {
+    margin: 0 30px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.14em;
+  }
+
+  .section-sub {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
