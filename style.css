@@ -69,7 +69,17 @@ body {
 
 .About {
   padding-top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
 }
+
+.About.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
 /* 
 .about-p{
   display: flex;
@@ -102,8 +112,19 @@ body {
 
 /***** Skill部分 *****/
 
+/* Skill */
+
 .Skill {
   padding-top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.Skill.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
 
 .skill-inner {
@@ -133,6 +154,15 @@ body {
 
 .Portfolio {
   padding-top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.Portfolio.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
 
 .pf-inner {
@@ -356,7 +386,7 @@ body {
     width: 80px;
     height: 80px;
     margin-right: 30px;
-    background-image: url(https://y-m-29.github.io/y-m-portfolio/menu.svg);
+    background-image: url(../img/menu.svg);
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -373,7 +403,7 @@ body {
   }
 
   .menu-2.is-checked {
-    background-image: url(https://y-m-29.github.io/y-m-portfolio/close.svg);
+    background-image: url(../img/close.svg);
   }
 
   .menu-item:hover {
@@ -443,6 +473,15 @@ body {
 
   .Skill-sp {
     padding-top: 150px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 2s;
+  }
+
+  .Skill-sp.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
   }
 
   .skill-title-sp {
